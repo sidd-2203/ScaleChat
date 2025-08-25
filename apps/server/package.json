@@ -1,0 +1,24 @@
+{
+    "name": "scaleChat-server",
+    "version": "0.0.1",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
+        "start": "node dist/index",
+        "build": "tsc -p ."
+    },
+    "devDependencies": {
+        "@types/node": "^24.3.0",
+        "tsc-watch": "^7.1.1",
+        "typescript": "^5.9.2"
+    },
+    "dependencies": {
+        "@types/node": "^24.3.0",
+        "dotenv": "^17.2.1",
+        "express": "^5.1.0",
+        "ioredis": "^5.7.0",
+        "redis": "^5.8.2",
+        "socket.io": "^4.7.5"
+    }
+}
